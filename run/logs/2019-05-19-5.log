@@ -1,0 +1,267 @@
+[22:08:04] [main/INFO] [GradleStart]: Extra: []
+[22:08:04] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/Jannik/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[22:08:04] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:08:04] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:08:04] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[22:08:04] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:08:04] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
+[22:08:04] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_212, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_212\jre
+[22:08:04] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[22:08:04] [main/ERROR] [FML]: Full: C:\Users\Jannik\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[22:08:04] [main/ERROR] [FML]: Trimmed: c:/users/jannik/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[22:08:04] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[22:08:04] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+[22:08:09] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[22:08:09] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[22:08:09] [main/INFO] [FML]: Searching D:\Jannik\Downloads\forge-1.12.2-14.23.5.2768-mdk\run\.\mods for mods
+[22:08:09] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[22:08:09] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[22:08:09] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[22:08:09] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[22:08:09] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[22:08:09] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[22:08:09] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[22:08:09] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[22:08:09] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[22:08:12] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[22:08:12] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[22:08:12] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[22:08:13] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[22:08:13] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[22:08:13] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[22:08:13] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[22:08:14] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Player275
+[22:08:22] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[22:08:22] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[22:08:25] [main/INFO] [FML]: -- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_212, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 855564024 bytes (815 MB) / 1008205824 bytes (961 MB) up to 1008205824 bytes (961 MB)
+	JVM Flags: 2 total; -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 419.17' Renderer: 'GeForce GTX 960/PCIe/SSE2'
+[22:08:25] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
+[22:08:25] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[22:08:26] [main/INFO] [FML]: Replaced 1036 ore ingredients
+[22:08:26] [main/INFO] [FML]: Searching D:\Jannik\Downloads\forge-1.12.2-14.23.5.2768-mdk\run\.\mods for mods
+[22:08:29] [main/INFO] [FML]: Forge Mod Loader has identified 5 mods to load
+[22:08:29] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, thanosinfinitygauntlet] at CLIENT
+[22:08:29] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, thanosinfinitygauntlet] at SERVER
+[22:08:30] [Thread-3/INFO] [FML]: Using alternative sync timing : 200 frames of Display.update took 1649992888 nanos
+[22:08:33] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TIG Mod
+[22:08:34] [main/INFO] [FML]: Processing ObjectHolder annotations
+[22:08:34] [main/INFO] [FML]: Found 1168 ObjectHolder annotations
+[22:08:34] [main/INFO] [FML]: Identifying ItemStackHolder annotations
+[22:08:34] [main/INFO] [FML]: Found 0 ItemStackHolder annotations
+[22:08:34] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
+[22:08:34] [main/INFO] [FML]: Applying holder lookups
+[22:08:34] [main/INFO] [FML]: Holder lookups applied
+[22:08:34] [main/INFO] [thanosinfinitygauntlet]: TIG MOD >> Registered items
+[22:08:34] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[22:08:34] [main/INFO] [FML]: Applying holder lookups
+[22:08:34] [main/INFO] [FML]: Holder lookups applied
+[22:08:34] [main/INFO] [FML]: Applying holder lookups
+[22:08:34] [main/INFO] [FML]: Holder lookups applied
+[22:08:35] [main/INFO] [FML]: Applying holder lookups
+[22:08:35] [main/INFO] [FML]: Holder lookups applied
+[22:08:35] [main/INFO] [FML]: Injecting itemstacks
+[22:08:35] [main/INFO] [FML]: Itemstack injection complete
+[22:08:35] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: UP_TO_DATE Target: null
+[22:08:46] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[22:08:46] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[22:08:46] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:08:46] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[22:08:46] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[22:08:56] [main/INFO] [FML]: Max texture size: 16384
+[22:08:57] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
+[22:08:59] [main/INFO] [FML]: Applying holder lookups
+[22:08:59] [main/INFO] [FML]: Holder lookups applied
+[22:08:59] [main/INFO] [FML]: Injecting itemstacks
+[22:08:59] [main/INFO] [FML]: Itemstack injection complete
+[22:08:59] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 5 mods
+[22:08:59] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[22:08:59] [main/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
+[22:09:01] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id
+[22:09:08] [main/INFO] [net.minecraft.client.multiplayer.GuiConnecting]: Connecting to 169.254.181.9, 49276
+[22:09:16] [Netty Client IO #0/WARN] [net.minecraft.client.network.NetHandlerLoginClient]: Couldn't connect to auth servers but will continue to join LAN
+[22:09:16] [Netty Client IO #0/INFO] [FML]: Server protocol version 2
+[22:09:16] [main/INFO] [FML]: Injecting existing registry data into this client instance
+[22:09:17] [main/INFO] [FML]: Applying holder lookups
+[22:09:17] [main/INFO] [FML]: Holder lookups applied
+[22:09:17] [Netty Client IO #0/INFO] [FML]: [Netty Client IO #0] Client side modded connection established
+[22:09:21] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 2 advancements
+[22:09:29] [main/INFO] [FML]: Applying holder lookups
+[22:09:29] [main/INFO] [FML]: Holder lookups applied
+[22:09:34] [main/INFO] [net.minecraft.client.multiplayer.GuiConnecting]: Connecting to 169.254.181.9, 49276
+[22:09:39] [Netty Client IO #1/WARN] [net.minecraft.client.network.NetHandlerLoginClient]: Couldn't connect to auth servers but will continue to join LAN
+[22:09:39] [Netty Client IO #1/INFO] [FML]: Server protocol version 2
+[22:09:39] [main/INFO] [FML]: Injecting existing registry data into this client instance
+[22:09:39] [main/INFO] [FML]: Applying holder lookups
+[22:09:39] [main/INFO] [FML]: Holder lookups applied
+[22:09:39] [Netty Client IO #1/INFO] [FML]: [Netty Client IO #1] Client side modded connection established
+[22:09:41] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 2 advancements
+[22:10:23] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] [Player606: Teleported Player606 to Player275]
+[22:10:30] [main/INFO] [net.minecraft.client.Minecraft]: Stopping!
+[22:10:30] [main/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
+[22:10:30] [main/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com
+rver thread/INFO] [FML]: [Server thread] Server side modded connection established
+[22:08:31] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[22:08:31] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player606[local:E:0ba8ca1d] logged in with entity id 304 at (55.64110499978998, 64.0, 27.711119889413723)
+[22:08:31] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player606 joined the game
+[22:08:35] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[22:08:36] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'Copy of New World'/overworld
+[22:08:37] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[22:08:37] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'Copy of New World'/overworld
+[22:08:38] [pool-2-thread-1/WARN] [com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@64f29882[id=92939c63-a7e1-358c-986e-33e314619bde,name=Player606,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:60) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:57) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) [guava-21.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:170) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:3181) [Minecraft.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:138) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_212]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_212]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_212]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_212]
+[22:09:02] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[22:09:02] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'Copy of New World'/overworld
+[22:09:04] [main/INFO] [net.minecraft.network.NetworkSystem]: Using default channel type
+[22:09:04] [main/INFO] [net.minecraft.server.integrated.IntegratedServer]: Started on 49276
+[22:09:04] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Local game hosted on port 49276
+[22:09:16] [User Authenticator #1/WARN] [net.minecraft.server.network.NetHandlerLoginServer]: Failed to verify username but will let them in anyway!
+[22:09:16] [Netty Server IO #3/INFO] [FML]: Client protocol version 2
+[22:09:16] [Netty Server IO #3/INFO] [FML]: Client attempting to join with 5 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2768,thanosinfinitygauntlet@1.0,mcp@9.42
+[22:09:17] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[22:09:17] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player275[/169.254.181.9:49310] logged in with entity id 680 at (71.44482258077164, 90.0, 156.8481125162583)
+[22:09:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player275 joined the game
+[22:09:17] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Player275 joined the game
+[22:09:29] [Netty Server IO #3/ERROR] [FML]: NetworkDispatcher exception
+io.netty.handler.codec.DecoderException: The received string length is longer than maximum allowed (22 > 20)
+	at net.minecraft.network.PacketBuffer.readString(PacketBuffer.java:424) ~[PacketBuffer.class:?]
+	at net.minecraft.network.play.client.CPacketCustomPayload.readPacketData(CPacketCustomPayload.java:37) ~[CPacketCustomPayload.class:?]
+	at net.minecraft.network.NettyPacketDecoder.decode(NettyPacketDecoder.java:38) ~[NettyPacketDecoder.class:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:411) ~[ByteToMessageDecoder.class:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:248) ~[ByteToMessageDecoder.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) [ByteToMessageDecoder.class:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) [ByteToMessageDecoder.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) [ByteToMessageDecoder.class:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) [ByteToMessageDecoder.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) [MessageToMessageDecoder.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:287) [IdleStateHandler.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334) [DefaultChannelPipeline$HeadContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926) [DefaultChannelPipeline.class:4.1.9.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:134) [AbstractNioByteChannel$NioByteUnsafe.class:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:624) [NioEventLoop.class:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:559) [NioEventLoop.class:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:476) [NioEventLoop.class:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438) [NioEventLoop.class:4.1.9.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [SingleThreadEventExecutor$5.class:4.1.9.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_212]
+[22:09:29] [Netty Server IO #3/ERROR] [FML]: NetworkDispatcher exception
+io.netty.handler.codec.DecoderException: java.io.IOException: Packet 0/1 (CPacketTabComplete) was larger than I expected, found 1 bytes extra whilst reading packet 1
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:442) ~[ByteToMessageDecoder.class:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:375) ~[ByteToMessageDecoder.class:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:342) ~[ByteToMessageDecoder.class:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:325) ~[ByteToMessageDecoder.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:224) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:360) [ByteToMessageDecoder.class:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:325) [ByteToMessageDecoder.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:224) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:360) [ByteToMessageDecoder.class:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:325) [ByteToMessageDecoder.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:224) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75) [ChannelInboundHandlerAdapter.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:224) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75) [ChannelInboundHandlerAdapter.class:4.1.9.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:278) [IdleStateHandler.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:224) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1329) [DefaultChannelPipeline$HeadContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:231) [AbstractChannelHandlerContext.class:4.1.9.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:908) [DefaultChannelPipeline.class:4.1.9.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:744) [AbstractChannel$AbstractUnsafe$7.class:4.1.9.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [AbstractEventExecutor.class:4.1.9.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:403) [SingleThreadEventExecutor.class:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:442) [NioEventLoop.class:4.1.9.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [SingleThreadEventExecutor$5.class:4.1.9.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_212]
+Caused by: java.io.IOException: Packet 0/1 (CPacketTabComplete) was larger than I expected, found 1 bytes extra whilst reading packet 1
+	at net.minecraft.network.NettyPacketDecoder.decode(NettyPacketDecoder.java:42) ~[NettyPacketDecoder.class:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:411) ~[ByteToMessageDecoder.class:4.1.9.Final]
+	... 35 more
+[22:09:29] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Player275 lost connection: Internal Exception: io.netty.handler.codec.DecoderException: The received string length is longer than maximum allowed (22 > 20)
+[22:09:29] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player275 left the game
+[22:09:29] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Player275 left the game
+[22:09:39] [User Authenticator #2/WARN] [net.minecraft.server.network.NetHandlerLoginServer]: Failed to verify username but will let them in anyway!
+[22:09:39] [Netty Server IO #4/INFO] [FML]: Client protocol version 2
+[22:09:39] [Netty Server IO #4/INFO] [FML]: Client attempting to join with 5 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2768,thanosinfinitygauntlet@1.0,mcp@9.42
+[22:09:39] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[22:09:39] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player275[/169.254.181.9:49364] logged in with entity id 1532 at (70.62435590464756, 88.0, 152.30000001192093)
+[22:09:39] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player275 joined the game
+[22:09:40] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Player275 joined the game
+[22:10:22] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Player275, Player606
+[22:10:23] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: [Player606: Teleported Player606 to Player275]
+[22:10:23] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Teleported Player606 to Player275
+[22:10:31] [Netty Server IO #4/ERROR] [FML]: NetworkDispatcher exception
+java.io.IOException: Eine vorhandene Verbindung wurde vom Remotehost geschlossen
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_212]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_212]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_212]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_212]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_212]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[PooledUnsafeDirectByteBuf.class:4.1.9.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[AbstractByteBuf.class:4.1.9.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[NioSocketChannel.class:4.1.9.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [AbstractNioByteChannel$NioByteUnsafe.class:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:624) [NioEventLoop.class:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:559) [NioEventLoop.class:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:476) [NioEventLoop.class:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438) [NioEventLoop.class:4.1.9.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [SingleThreadEventExecutor$5.class:4.1.9.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_212]
+[22:10:31] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Player275 lost connection: Internal Exception: java.io.IOException: Eine vorhandene Verbindung wurde vom Remotehost geschlossen
+[22:10:31] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player275 left the game
+[22:10:31] [main/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Player275 left the game

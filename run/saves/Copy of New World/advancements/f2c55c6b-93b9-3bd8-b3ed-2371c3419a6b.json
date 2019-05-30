@@ -1,0 +1,27 @@
+{
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "mutton": "2019-05-18 18:28:16 +0200"
+    },
+    "done": false
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2019-05-18 18:28:16 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2019-05-18 18:29:08 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "savanna": "2019-05-18 18:26:09 +0200",
+      "savanna_rock": "2019-05-18 18:28:30 +0200"
+    },
+    "done": false
+  }
+}

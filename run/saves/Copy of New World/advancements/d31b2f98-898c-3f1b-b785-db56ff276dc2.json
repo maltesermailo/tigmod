@@ -1,0 +1,14 @@
+{
+  "minecraft:recipes/food/cake": {
+    "criteria": {
+      "has_egg": "2019-05-17 23:55:20 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "savanna_rock": "2019-05-17 23:48:07 +0200"
+    },
+    "done": false
+  }
+}

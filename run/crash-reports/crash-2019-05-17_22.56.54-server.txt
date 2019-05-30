@@ -1,0 +1,100 @@
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 5/17/19 10:56 PM
+Description: Ticking player
+
+java.lang.ArrayIndexOutOfBoundsException: 5
+	at de.maltesermailo.tigmod.gauntlet.InfinityGauntletInventory.getStackInSlot(InfinityGauntletInventory.java:55)
+	at net.minecraft.inventory.Slot.getStack(Slot.java:81)
+	at net.minecraft.inventory.Container.detectAndSendChanges(Container.java:97)
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdate(EntityPlayerMP.java:365)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2171)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:871)
+	at net.minecraft.world.World.updateEntity(World.java:2130)
+	at net.minecraft.world.WorldServer.tickPlayers(WorldServer.java:672)
+	at net.minecraft.world.World.updateEntities(World.java:1906)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:643)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:842)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at de.maltesermailo.tigmod.gauntlet.InfinityGauntletInventory.getStackInSlot(InfinityGauntletInventory.java:55)
+	at net.minecraft.inventory.Slot.getStack(Slot.java:81)
+	at net.minecraft.inventory.Container.detectAndSendChanges(Container.java:97)
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdate(EntityPlayerMP.java:365)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2171)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:871)
+	at net.minecraft.world.World.updateEntity(World.java:2130)
+
+-- Player being ticked --
+Details:
+	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
+	Entity ID: 295
+	Entity Name: Player745
+	Entity's Exact location: 90.13, 66.00, 51.39
+	Entity's Block location: World: (90,66,51), Chunk: (at 10,4,3 in 5,3; contains blocks 80,0,48 to 95,255,63), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.WorldServer.tickPlayers(WorldServer.java:672)
+	at net.minecraft.world.World.updateEntities(World.java:1906)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:643)
+
+-- Affected level --
+Details:
+	Level name: Copy of New World
+	All players: 1 total; [EntityPlayerMP['Player745'/295, l='Copy of New World', x=90.13, y=66.00, z=51.39]]
+	Chunk stats: ServerChunkCache: 625 Drop: 0
+	Level seed: 2025994630535802381
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (60,64,25), Chunk: (at 12,4,9 in 3,1; contains blocks 48,0,16 to 63,255,31), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 164714 game time, 164714 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 11198 (now: true), thunder time: 14698 (now: true)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:842)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_212, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 625825352 bytes (596 MB) / 993525760 bytes (947 MB) up to 993525760 bytes (947 MB)
+	JVM Flags: 2 total; -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID                     | Version      | Source                           | Signature |
+	|:--------- |:---------------------- |:------------ |:-------------------------------- |:--------- |
+	| UCHIJAAAA | minecraft              | 1.12.2       | minecraft.jar                    | None      |
+	| UCHIJAAAA | mcp                    | 9.42         | minecraft.jar                    | None      |
+	| UCHIJAAAA | FML                    | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2768.jar | None      |
+	| UCHIJAAAA | forge                  | 14.23.5.2768 | forgeSrc-1.12.2-14.23.5.2768.jar | None      |
+	| UCHIJAAAA | thanosinfinitygauntlet | 1.0          | main                             | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player745'/295, l='Copy of New World', x=90.13, y=66.00, z=51.39]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

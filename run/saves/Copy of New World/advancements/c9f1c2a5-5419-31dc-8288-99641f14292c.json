@@ -1,0 +1,9 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "savanna": "2019-05-17 21:29:45 +0200",
+      "desert": "2019-05-17 21:27:37 +0200"
+    },
+    "done": false
+  }
+}

@@ -1,0 +1,59 @@
+INFO  2019-05-22 15:23:53,241 (Saros.java:220) Starting Saros 14.10.31 running:
+  Java Version: 11.0.2
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.15.200.v20190301-1641
+  Operating System: Windows 10 (10.0)
+  Hardware Architecture: amd64
+INFO  2019-05-22 15:23:53,272 (SarosContext.java:153) creating Saros runtime context...
+DEBUG 2019-05-22 15:23:53,318 (XMPPAccountStore.java:117) loading accounts from file: C:\Users\Jannik\.saros\config.dat
+DEBUG 2019-05-22 15:23:53,465 (XMPPAccountStore.java:176) loaded 1 account(s)
+INFO  2019-05-22 15:23:53,623 (SarosContext.java:199) successfully created Saros runtime context
+DEBUG 2019-05-22 15:23:53,641 (DataTransferManager.java:467) used transport order for the current XMPP connection: [XMPP-Socks5-Transport, XMPP-IBB-Transport]
+INFO  2019-05-22 15:23:53,677 (PreferenceInitializer.java:50) initializing preference default values
+DEBUG 2019-05-22 15:23:53,761 (SarosAnnotation.java:117) resetting annotation colors
+DEBUG 2019-05-22 15:23:53,893 (Saros.java:430) skipping conversion of old XMPP accounts, because there are already new ones
+DEBUG 2019-05-22 15:23:59,455 (SharedDocumentProvider.java:77) SharedDocumentProvider created by Eclipse
+DEBUG 2019-05-22 15:24:04,226 (WhiteboardManager.java:194) WhiteboardManager instantiated
+DEBUG 2019-05-22 15:24:04,238 (DocumentRecord.java:93) Added Node: attr(155853144423682439) name=svg
+DEBUG 2019-05-22 15:24:04,478 (XMPPConnectionService.java:439) started Socks5 proxy on port: 7777 [listening on all interfaces]
+DEBUG 2019-05-22 15:24:08,806 (XMPPConnectionService.java:459) using autodetected addresses: [192.168.77.1, 169.254.181.9, 192.168.38.1, 192.168.178.20, 2001:16b8:2848:e900:2130:fb9b:9c0f:28a, 2001:16b8:2848:e900:d9ca:704:cf89:21, fe80:0:0:0:2130:fb9b:9c0f:28a%wlan0, fe80:0:0:0:b91d:4084:d9a5:daa2%eth1, fe80:0:0:0:e5e3:781d:d5ae:b509%eth9, fe80:0:0:0:6d7b:3e0a:232a:c09a%eth11]
+DEBUG 2019-05-22 15:24:08,810 (XMPPConnectionService.java:398)  new connection state == CONNECTING
+DEBUG 2019-05-22 15:24:09,822 (XMPPConnectionService.java:398) maltesermailo@saros-con.imp.fu-berlin.de/Saros new connection state == CONNECTED
+DEBUG 2019-05-22 15:24:09,823 (DataTransferManager.java:467) used transport order for the current XMPP connection: [XMPP-Socks5-Transport, XMPP-IBB-Transport]
+DEBUG 2019-05-22 15:24:09,824 (SkypeManager.java:289) Refreshing Skype username cache...
+ERROR 2019-05-22 15:24:09,995 (StunServiceImpl.java:263) error sending STUN request
+java.net.SocketException: Network is unreachable: Datagram send failed
+	at java.base/java.net.DualStackPlainDatagramSocketImpl.socketSend(Native Method)
+	at java.base/java.net.DualStackPlainDatagramSocketImpl.send(DualStackPlainDatagramSocketImpl.java:136)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at de.fu_berlin.inf.dpp.net.stun.internal.StunServiceImpl$StunDiscovery$1.run(StunServiceImpl.java:255)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+ERROR 2019-05-22 15:24:09,995 (StunServiceImpl.java:263) error sending STUN request
+java.net.SocketException: Network is unreachable: Datagram send failed
+	at java.base/java.net.DualStackPlainDatagramSocketImpl.socketSend(Native Method)
+	at java.base/java.net.DualStackPlainDatagramSocketImpl.send(DualStackPlainDatagramSocketImpl.java:136)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at de.fu_berlin.inf.dpp.net.stun.internal.StunServiceImpl$StunDiscovery$1.run(StunServiceImpl.java:255)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+ERROR 2019-05-22 15:24:09,995 (StunServiceImpl.java:263) error sending STUN request
+java.net.SocketException: Network is unreachable: Datagram send failed
+	at java.base/java.net.DualStackPlainDatagramSocketImpl.socketSend(Native Method)
+	at java.base/java.net.DualStackPlainDatagramSocketImpl.send(DualStackPlainDatagramSocketImpl.java:136)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at de.fu_berlin.inf.dpp.net.stun.internal.StunServiceImpl$StunDiscovery$1.run(StunServiceImpl.java:255)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+ERROR 2019-05-22 15:24:13,615 (StunServiceImpl.java:155) an error occurred while performing a STUN discovery: ICMP Port Unreachable
+java.net.PortUnreachableException: ICMP Port Unreachable
+	at java.base/java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method)
+	at java.base/java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:124)
+	at java.base/java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:181)
+	at java.base/java.net.DatagramSocket.receive(DatagramSocket.java:814)
+	at de.fu_berlin.inf.dpp.net.stun.internal.StunServiceImpl$StunDiscovery.performStunDiscovery(StunServiceImpl.java:284)
+	at de.fu_berlin.inf.dpp.net.stun.internal.StunServiceImpl$StunDiscovery.run(StunServiceImpl.java:151)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+WARN  2019-05-22 15:24:19,995 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /169.254.181.9:0
+WARN  2019-05-22 15:24:19,995 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /192.168.38.1:0
+WARN  2019-05-22 15:24:19,995 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /192.168.77.1:0
+DEBUG 2019-05-22 22:28:19,960 (XMPPConnectionService.java:398) maltesermailo@saros-con.imp.fu-berlin.de/Saros new connection state == DISCONNECTING
+DEBUG 2019-05-22 22:28:20,251 (XMPPConnectionService.java:398)  new connection state == NOT_CONNECTED
+DEBUG 2019-05-22 22:28:20,252 (UPnPServiceImpl.java:295) deleting existing port mappings

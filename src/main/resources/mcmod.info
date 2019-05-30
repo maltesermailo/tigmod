@@ -1,0 +1,16 @@
+[
+{
+  "modid": "thanosinfinitygauntlet",
+  "name": "TIG Mod",
+  "description": "A mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Nightishaman"],
+  "credits": "Thanks to VelVoxel Raptor for the Model",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

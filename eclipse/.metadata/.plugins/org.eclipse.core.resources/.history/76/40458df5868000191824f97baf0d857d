@@ -1,0 +1,141 @@
+package de.maltesermailo.tigmod.stones;
+
+import java.util.List;
+
+import de.maltesermailo.tigmod.ChangeModeMessage;
+import de.maltesermailo.tigmod.TIGMod;
+import de.maltesermailo.tigmod.TeleportMessage;
+import de.maltesermailo.tigmod.gauntlet.EnumStones;
+import de.maltesermailo.tigmod.gauntlet.InfinityGauntlet;
+import de.maltesermailo.tigmod.proxy.ProxyClient;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.SoundEvents;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.RayTraceResult;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.world.World;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+public class MindStone extends Item implements BasicStone {
+	
+	public MindStone() {
+		setUnlocalizedName("mind_stone");
+		setRegistryName("mind_stone");
+		setMaxStackSize(1);
+		setCreativeTab(CreativeTabs.MISC);
+	}
+	
+	@Override
+	public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+		tooltip.add("The Mind Stone is the universe's consciousness. You can fly with it.");
+	}
+	
+	@Override
+	public void onCreated(ItemStack stack, World worldIn, EntityPlayer playerIn) {
+		NBTTagCompound tag = new NBTTagCompound();
+		tag.setInteger("currentSelectedPower", EnumPowers.MindStone.FLY.ordinal());
+		stack.setTagCompound(tag);
+	}
+	
+	@Override
+	public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected) {
+		if(isSelected) {
+			if(stack.getTagCompound() == null) {
+				this.onCreated(stack, worldIn, null);
+			}
+			if(entityIn instanceof EntityPlayer) {
+				EntityPlayer player = (EntityPlayer) entityIn;
+				player.sendStatusMessage(new TextComponentString("§aSelected: " + this.getCaption(stack)), true);
+				
+				if(FMLCommonHandler.instance().getEffectiveSide().isClient()) {
+					if(((ProxyClient) TIGMod.proxy).keyBindingChangeMode.isPressed()) {
+						SimpleNetworkWrapper network = TIGMod.proxy.INSTANCE;
+						network.sendToServer(new ChangeModeMessage());
+					}
+				}
+			}
+		}
+	}
+	
+	public String getCaption(ItemStack item) {
+		return EnumPowers.MindStone.values()[item.getTagCompound().getInteger("currentSelectedPower")].getCaption();
+	}
+	
+	@Override
+	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
+		ItemStack item = playerIn.getHeldItem(handIn);
+		
+		EnumPowers.MindStone currentSelected = EnumPowers.MindStone.values()[item.getTagCompound().getInteger("currentSelectedPower")];
+		
+		if(currentSelected == EnumPowers.MindStone.FLY) {
+			if(playerIn.capabilities.allowFlying) {
+				playerIn.capabilities.allowFlying = false;
+				playerIn.capabilities.isFlying = false;
+			} else {
+				playerIn.capabilities.allowFlying = true;
+			}
+		}
+		
+		return super.onItemRightClick(worldIn, playerIn, handIn);
+	}
+
+	@Override
+	public int changeMode(ItemStack item, EntityPlayer player, boolean powerStone, boolean gauntlet) {
+		int currentSelected = item.getTagCompound().getInteger("currentSelectedPower");
+		
+		EnumPowers.MindStone nextPower = null;
+		
+		if(EnumPowers.MindStone.values().length < (currentSelected+2)) {
+			nextPower = EnumPowers.MindStone.FLY;
+		} else {
+			nextPower = EnumPowers.MindStone.values()[currentSelected+1];
+			
+			if(nextPower.isGauntledNeeded() && !gauntlet) {
+				item.getTagCompound().setInteger("currentSelectedPower", nextPower.ordinal());
+				return changeMode(item, player, powerStone, gauntlet);
+			}
+			if(nextPower.isPowerStoneNeeded() && !powerStone) {
+				if(!player.inventory.hasItemStack(new ItemStack(TIGMod.INSTANCE.powerStoneItem))) {
+					item.getTagCompound().setInteger("currentSelectedPower", nextPower.ordinal());
+					return changeMode(item, player, powerStone, gauntlet);
+				}
+			}
+		}
+		
+		item.getTagCompound().setInteger("currentSelectedPower", nextPower.ordinal());
+		
+		return nextPower.ordinal();
+	}
+
+	@Override
+	public EnumStones getType() {
+		return EnumStones.MIND_STONE;
+	}
+
+	@Override
+	public void onClickGauntlet(InfinityGauntlet infinityGauntlet, ItemStack stack, EntityPlayer player) {
+		EnumPowers.MindStone currentSelected = EnumPowers.MindStone.values()[stack.getTagCompound().getInteger("currentSelectedPower")];
+		
+		if(currentSelected == EnumPowers.MindStone.FLY) {
+			if(player.capabilities.allowFlying) {
+				player.capabilities.allowFlying = false;
+				player.capabilities.isFlying = false;
+			} else {
+				player.capabilities.allowFlying = true;
+			}
+		}
+	}
+
+}

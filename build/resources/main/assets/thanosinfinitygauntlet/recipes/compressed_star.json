@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "dxd",
+    "xxx",
+    "dxd"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:nether_star"
+    }, "d": {
+      "item": "minecraft:emerald_block"
+    }
+  },
+  "result": {
+    "item": "thanosinfinitygauntlet:compressed_star",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "thanosinfinitygauntlet:compressed_star"
+    }
+  },
+  "result": {
+    "item": "thanosinfinitygauntlet:dual_compressed_star",
+    "count": 1
+  }
+}
