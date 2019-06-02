@@ -86,7 +86,8 @@ public class InfinityGauntlet extends Item {
 			}
 			if(entityIn instanceof EntityPlayer) {
 				EntityPlayer player = (EntityPlayer) entityIn;
-				player.sendStatusMessage(new TextComponentString("§aSelected " + EnumStones.values()[stack.getTagCompound().getInteger("currentSelectedStone")].getCaption() + ": " + this.getCaption(stack)), true);
+				if(FMLCommonHandler.instance().getEffectiveSide().isServer())
+					player.sendStatusMessage(new TextComponentString("§aSelected " + EnumStones.values()[stack.getTagCompound().getInteger("currentSelectedStone")].getCaption() + ": " + this.getCaption(stack)), true);
 				
 				if(FMLCommonHandler.instance().getEffectiveSide().isClient()) {
 					if(((ProxyClient) TIGMod.proxy).keyBindingChangeMode.isPressed()) {

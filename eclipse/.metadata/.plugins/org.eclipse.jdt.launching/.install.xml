@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
-    <entry loc="C:\Program Files\Java\jdk-11.0.2" stamp="1547754018163"/>
-    <entry loc="C:\Program Files\Java\jdk1.8.0_212" stamp="1557923282637"/>
+<entry loc="C:\Program Files\Java\jdk-11.0.2" stamp="1547754018163"/>
+<entry loc="C:\Program Files\Java\jdk1.8.0_212" stamp="1557923282637"/>
+<entry loc="/usr/lib/jvm/java-8-openjdk" stamp="1559311425000"/>
 </dirs>

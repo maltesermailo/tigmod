@@ -1,0 +1,14 @@
+{
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2019-06-02 01:26:01 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "savanna": "2019-06-02 01:25:33 +0200"
+    },
+    "done": false
+  }
+}
