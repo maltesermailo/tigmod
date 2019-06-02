@@ -1,5 +1,6 @@
 package de.maltesermailo.tigmod.gauntlet;
 
+import de.maltesermailo.tigmod.gauntlet.render.RenderStone;
 import de.maltesermailo.tigmod.stones.BasicStone;
 import de.maltesermailo.tigmod.stones.SpaceStone;
 import net.minecraft.entity.player.EntityPlayer;
@@ -73,6 +74,7 @@ public class InfinityGauntletInventory extends InventoryBasic {
         this.stack.getTagCompound().setTag("stones", tagList);
         
         ((InfinityGauntlet) stack.getItem()).updateModel(stack);
+        System.out.println(RenderStone.getModel(stack)); //TODO: Implement Model Renderer
 	}
 
 	@Override
