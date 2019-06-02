@@ -59,7 +59,8 @@ public class RealityStone extends Item implements BasicStone {
 			}
 			if(entityIn instanceof EntityPlayer) {
 				EntityPlayer player = (EntityPlayer) entityIn;
-				player.sendStatusMessage(new TextComponentString("§aSelected: " + this.getCaption(stack)), true);
+				if(FMLCommonHandler.instance().getEffectiveSide().isServer())
+					player.sendStatusMessage(new TextComponentString("§aSelected: " + this.getCaption(stack)), true);
 				
 				if(FMLCommonHandler.instance().getEffectiveSide().isClient()) {
 					if(((ProxyClient) TIGMod.proxy).keyBindingChangeMode.isPressed()) {
