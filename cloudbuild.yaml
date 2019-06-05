@@ -1,3 +1,7 @@
 steps:
 - name: 'gcr.io/cloud-builders/gradle'
   args: ['build']
+artifacts:
+  objects:
+    location: 'gs://tigmod'
+    paths: ['build/libs/thanosinfinitygauntlet-1.0.jar']
